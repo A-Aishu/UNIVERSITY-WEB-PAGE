@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="Sathyabama Institute of Science and Technology" >
+<meta name="keywords" content="Sathyabama, Engineering, B.E., B.Tech., B.Arch., Best Institute, Engineering in chennai, Sathyabama chennai" >
+<title>Tuition Fee:: Sathyabama Institute of Science and Technology  (Deemed to be University)</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JK6X4EYKRR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JK6X4EYKRR');
+</script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style_new.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/animate.min.css" rel="stylesheet">
+<script src="sathIncludes/formvalidation.js"></script>
+
+
+<script type="text/javascript">
+
+function validateregno(){
+
+	var form = document.form1;
+
+	if(TextValidate(form.txtregisterno,"your register number")==false) { return false;}	
+
+	if(NumberValidate(form.txtregisterno,"register number")==false) { return false;}
+
+	if(TextValidate(form.txtdob,"your date of birth")==false) { return false;}
+
+	if(trim(form.txtdob.value)=="dd/mm/yyyy") {
+
+		alert("Please enter your date of birth");
+
+		form.txtdob.focus();
+
+		return false;
+
+	}
+
+	if(DateValidate1(form.txtdob,"date of birth")==false) { return false;}
+
+	form.action = "tutionfees_details.php";
+
+	form.submit();
+
+}
+
+
+
+function enableText(chkbox) {
+
+	document.getElementById("txtregisterno").value = "";
+
+	document.getElementById("txtdob").value = "";
+
+	if(chkbox.checked==true) {
+
+		document.getElementById("reg_img").style.display = "none";
+
+		document.getElementById("reg_img1").style.display = "";	
+
+	}else {
+
+		document.getElementById("reg_img").style.display = "";
+
+		document.getElementById("reg_img1").style.display = "none";	
+
+	}
+
+}
+
+function cleartext(cntrl, defvalue){
+
+	var cntrlvalue = document.getElementById(cntrl).value;	
+
+	if(document.getElementById(cntrl).value == defvalue){
+
+	  document.getElementById(cntrl).value = "";
+
+	  return false;
+
+	}else if(document.getElementById(cntrl).value ==""){
+
+		  document.getElementById(cntrl).value = defvalue;
+
+		  return false;
+
+	}
+
+}
+
+function NumericValidation(e) {
+
+	if ((e.charCode  >= 48 && e.charCode  <= 57) || e.charCode==0) {
+
+    	//no action  
+
+    }else {
+
+		 return false;	
+
+	}
+
+}
+
+</script>
+</head>
+<body bgcolor="#33ccff">
+<header>
+  <div class="header-outer">
+    <div class="container d-flex align-items-center">
+      <div class="col-xl-12">
+        <div class="row">
+          <div class="col-xl-6 col-md-6 logo"><a href="#"><img src="images/logo.svg"></a></div>
+          <div class="col-xl-6 col-md-6"><span class="mainbtn"><a href="https://www.sathyabama.ac.in">Main Website</a></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-menu">
+    <div class="container">
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <!--<li><a href="#pricing">About Us</a></li>-->
+          <li class="drop-down"><a href="#">Sathyabama Fees portal</a>
+            <ul>
+               <li><a href="tutionfees_home.php">Tuition Fees</a></li>
+              <li><a href="tutionfees_home_1styear.php">Tuition Fees (1st Year) - 2021 Batch</a></li>
+              <li><a href="trainingfees_home.php">Placement Fees</a></li>
+              <!--<li><a href="admission_step1.php">Admission 2020</a></li>-->
+              <li><a href="arrearfees_home.php">Arrear Fees</a></li>
+              <li><a href="hostelfees_home.php">Hostel Fees</a></li> 
+              <li><a href="revaluation_home.php">Revaluation Fees</a></li> 
+              <li><a href="phdfees_home.php">PHD Fees</a></li>  
+            </ul>
+          </li> 
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="pagein_wrap">
+  <div class="container">
+    <div class="col-lg-12">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php"><img src="images/homeicon.png" alt="Home" width="30" height="21" align="absmiddle" />Home</a></li>
+        <li class="breadcrumb-item active"><span class="pagin-act">Tuition Fee</span></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<main role="main">
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-lg-3 nopad-rt">
+        <div class="side_menus">
+  <h2>Sathyabama Fees portal</h2>
+  <ul  class="sidebar-nav">
+   <li><a href="tutionfees_home.php">Tuition Fees</a></li>
+  <li><a href="tutionfees_home_1styear.php">Tuition Fees (1st Year)  - 2021 Batch</a></li>
+  <li><a href="trainingfees_home.php">Placement Fees</a></li>
+  <!--<li><a href="admission_step1.php">Admission 2020</a></li>-->
+  <li><a href="arrearfees_home.php">Arrear Fees</a></li>
+  <li><a href="hostelfees_home.php">Hostel Fees</a></li> 
+  <li><a href="revaluation_home.php">Revaluation Fees</a></li> 
+  <li><a href="phdfees_home.php">PHD Fees</a></li>  
+ </ul>
+</div>
+      </div>
+      <div class="col-lg-9 border_left">
+        <div class="contents">
+          <h1>Sathyabama Institute of Science and Technology -  Pay Tuition Fees Online </h1>
+                    <h3>Students / Parents can choose any one of the three options available for the payment of Tuition Fees.</h3>
+          <p><img src="images/tuition_fees_online.png" class="img-responsive"/></p>
+          <h3>You are required to verify the student details before you opt for making the payment.</h3>
+          <h4>While making the payment using <span>Net Banking</span>, please note</h4>
+          <ul>
+            <li>Please  check whether the Net Banking has the transfer limit which is equal to the Tuition Fees.</li>
+            <li>A  Services charge of Rs. 50 (Rupees Fifty only) will be collected by the bank in addition to the amount of Tuition Fees.</li>
+          </ul>
+          <h4>While making the payment using <span>Credit Cards</span>, please note </h4>
+          <ul>
+            <li>Visa  and Master Cards should be used.</li>
+            <li>Please  check whether the Credit Card has the credit limit which is equal to the  Tuition Fees +  Surcharge.</li>
+            <li>A  Surcharge of 1.3% of the Tuition Fees will be collected by the bank in addition  to the amount of Tuition Fees.</li>
+          </ul>
+          <h4>While making the payment using <span>Debit Cards</span>, please note </h4>
+          <ul>
+            <li>Visa  and Master Cards should be used.</li>
+            <li>Please  check whether the Debit Card has the credit limit which is equal to the  Tuition Fees +  Surcharge.</li>
+            <li>A  Surcharge of 1% of the Tuition Fees will be collected by the bank in addition  to the amount of Tuition Fees.</li>
+          </ul>
+          <h4>While making the payment using <span>NEFT/RTGS/IMPS/Transfer Within Bank</span>, please note </h4>
+          <ul>
+            <li>Generate the NEFT/RTGS/IMPS/Transfer Within Bank Challan. </li>
+            <li>Use the generate challan to make the payment using any bank account. </li>
+            <li>A Surcharge of Rs.5 only will be collected by the bank in addition to the amount of Tuition Fees.</li>
+          </ul>
+          
+          <!-- <p><strong> While making the payment using <span style="color:#C09; font-size:16px;">Cash</span>, please note</strong></p>
+
+      <ul>
+
+        <li>Generate Indusind Bank Challan. </li>
+
+        <li>Make the payment in any one of the Indusind Bank Branches.</li>
+
+        <li>A Surcharge of Rs.75 only will be collected by the bank in addition to the amount of Tuition Fees.</li>
+
+      </ul>-->
+          
+          <h4>While making the payment using <span>Indian Bank Challan</span> Generation, please note </h4>
+          <ul>
+            <li>Please Generate the Challan.</li>
+            <li>Make the payment using the Generated Challan at any one of the <a href="http://www.indianbank.in/branch_locator.php" target="_blank">Indian Bank Branch Counters</a></li>
+            <li>A Services charge of Rs. 75 (Rupees Seventy Five only) will be collected by the bank in addition to the tuition amount.</li>
+            <li>Please note that the generated challan can be used <strong>within 10 days</strong> from the date of generation.</li>
+          </ul>
+          <h4>After <span>successful payment</span>, </h4>
+          <ul>
+            <li>Debit Cards / Credit Cards users will get a receipt, which can be used for future reference</li>
+            <li>Account transfers (Net banking) will get a receipt, which can be used for future reference</li>
+            <li>Students making the payment using Challan, should retain one copy with them and one copy should be <br />
+              submitted to the class counselors. </li>
+          </ul>
+          <h4>Any compliant or feedback mail to <a href="mailto:fee@sathyabama.ac.in">fee@sathyabama.ac.in</a> </h4>
+          
+          <!-- <h3><strong>LAST DATE FOR PAYMENT OF TUITION FEE IS 31-03-2022</strong></h3>-->
+          
+                    <form name="form1" id="form1" method="post">
+            <p align="center" style="padding-bottom:10px;">
+              <input  onClick="javascript:enableText(this);" type="checkbox" name="read"  />
+              <strong> I have read all the above instructions.</strong></p>
+            <p align="center" style="color:#FF0000">(Please click on the above check box to enable register number entry.)</p>
+            <h2 style="padding-bottom:10px;"><a name="number"></a>Please enter Register Number and Date of Birth (dd/mm/yyyy):</h2>
+                                                <table class="pageContent1" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr id="reg_img" style="display:">
+                <td colspan="2" style="padding:30px 0px; text-align:center;"><img src="images/register-1.jpg" /></td>
+              </tr>
+              <tr id="reg_img1" style="display:none">
+                <td colspan="2" align="center"><table width="100%" border="0" cellpadding="0" class="register" cellspacing="0" >
+                    <tr>
+                      <td><input type="text" name="txtregisterno" placeholder="Register Number"  id="txtregisterno" class="input-text" />
+                        <input type="text"   name="txtdob" id="txtdob" placeholder="eg 01/05/1991"  class="input-text" />
+                        <input type="button" name="btnsubmit" id="btnsubmit" value="Submit" class="submit-button" onClick="javascript:validateregno();"/></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">&nbsp;</div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+       
+       <div class="row">
+        <div class="col-md-12 nopad">
+          <p>Copyright 2021 &copy; Sathyabama Institute of Science and Technology All rights reserved. | <a href="https://fees.sathyabama.ac.in/terms_condition.php" target="_blank">Terms & Conditions</a></p>
+        </div>
+        
+       </div> 
+        
+       
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>--> 
+<script src="js/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/jquery.easing.min.js"></script> 
+<script src="js/main.js"></script>
+</main>
+</body>
+</html>
